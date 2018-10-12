@@ -30,11 +30,12 @@ public class Britney_time_test : MonoBehaviour
     void Update()
     {
 
-        if (time >= 0.0f)
+        if (time > 0.0f)
         {
             time -= Time.deltaTime;
         }
-        else if (healPoints <= 0.0f || time <= 0.0f)
+        
+        if (healPoints <= 0.0f || time <= 0.0f)
         {
             Debug.Log("Made it into the else if");
             time = 0;
@@ -47,7 +48,7 @@ public class Britney_time_test : MonoBehaviour
         Debug.Log("Dead :P");
         SceneManager.LoadScene("Khuu_Britney_Test");
 
-        // new scene implemented
+        //new scene implementeds
     }
    
 }
