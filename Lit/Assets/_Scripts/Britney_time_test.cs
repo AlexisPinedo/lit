@@ -46,7 +46,7 @@ public class Britney_time_test : MonoBehaviour
     void GameOver()
     {
         Debug.Log("Dead :P");
-        SceneManager.LoadScene("Khuu_Britney_Test");
+        SceneManager.LoadScene("GameOverMenu");
 
         //new scene implementeds
     }
