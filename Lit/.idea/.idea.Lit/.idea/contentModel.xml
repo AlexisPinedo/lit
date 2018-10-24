@@ -11,6 +11,8 @@
           <e p="Britney_time_test.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
+          <e p="portal.cs" t="Include" />
+          <e p="SimpleAnime.cs" t="Include" />
         </e>
         <e p="Cinemachine" t="Include">
           <e p="Base" t="Include">
