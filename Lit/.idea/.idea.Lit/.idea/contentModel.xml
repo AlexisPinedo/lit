@@ -13,6 +13,7 @@
           <e p="Movement.cs" t="Include" />
           <e p="portal.cs" t="Include" />
           <e p="SimpleAnime.cs" t="Include" />
+          <e p="Success.cs" t="Include" />
         </e>
         <e p="Cinemachine" t="Include">
           <e p="Base" t="Include">
