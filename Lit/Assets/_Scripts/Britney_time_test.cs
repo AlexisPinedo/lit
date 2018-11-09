@@ -12,7 +12,8 @@ public class Britney_time_test : MonoBehaviour
     [SerializeField]
     private int healPoints;
     // Use this for initialization
-   
+    //  public bool held = Input.GetKey(KeyCode.Escape);
+
     void Start()
     {
         Debug.Log("Begin");
@@ -29,7 +30,6 @@ public class Britney_time_test : MonoBehaviour
     }
     void Update()
     {
-
         if (time > 0.0f)
         {
             time -= Time.deltaTime;
@@ -42,6 +42,7 @@ public class Britney_time_test : MonoBehaviour
             healPoints = 0;
             GameOver();
         }
+       
     }
     void GameOver()
     {
@@ -51,4 +52,5 @@ public class Britney_time_test : MonoBehaviour
         //new scene implementeds
     }
    
+
 }
