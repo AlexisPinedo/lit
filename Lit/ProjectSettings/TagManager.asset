@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Danger
+  - platform
+  - Portal1in
+  - Portal1out
+  - ground
   layers:
   - Default
   - TransparentFX

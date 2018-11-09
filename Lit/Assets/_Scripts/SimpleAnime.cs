@@ -6,6 +6,7 @@ public class SimpleAnime : MonoBehaviour {
 
     // Use this for initialization
     [SerializeField] Vector3 pos;
+    public float time = 5f;
 	void Start ()
     {
 	}
@@ -17,7 +18,7 @@ public class SimpleAnime : MonoBehaviour {
 
     void MoveToTest()
     {
-        iTween.MoveTo(this.gameObject, iTween.Hash("position", pos, "time", 5f, "easetype", iTween.EaseType.easeInOutSine, "looptype", iTween.LoopType.pingPong) );
+        iTween.MoveTo(this.gameObject, iTween.Hash("position", pos, "time", time, "isLocal", true, "easetype", iTween.EaseType.easeInOutSine, "looptype", iTween.LoopType.pingPong) );
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
