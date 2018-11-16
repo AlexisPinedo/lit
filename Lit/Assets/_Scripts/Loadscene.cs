@@ -28,17 +28,15 @@ public class Loadscene : MonoBehaviour
     }
     public void QuitGame()
     {
-        Debug.Log("QUUuuuuiiIIIIIIIITTTTTTTTT");
+       // Debug.Log("QUUuuuuiiIIIIIIIITTTTTTTTT");
         Application.Quit();
 
     }
     public void Pause()
-    {
-       
+    { 
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
             pauseGame = true;
-
     }
     public void Resume()
     {
