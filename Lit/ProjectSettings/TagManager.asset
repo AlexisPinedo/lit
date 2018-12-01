@@ -9,6 +9,8 @@ TagManager:
   - Portal1in
   - Portal1out
   - ground
+  - Cheese
+  - Mouse
   layers:
   - Default
   - TransparentFX
