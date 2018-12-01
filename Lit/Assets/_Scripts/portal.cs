@@ -11,7 +11,7 @@ public class portal : MonoBehaviour {
 
     }
     void Update () {
-		if(Input.GetKeyDown(KeyCode.UpArrow) == true && teleport == true)
+		if((Input.GetKeyDown("up") || (Input.GetKeyDown("w"))) && teleport == true)
         {
             Debug.Log("LOL");
             player.position = portalOut.position;
@@ -20,8 +20,9 @@ public class portal : MonoBehaviour {
 	}
     public void OnTriggerEnter2D(Collider2D vari)
     {
-        if(vari.gameObject.tag == "Player")
+        if(vari.gameObject.CompareTag("Player"))
         {
+            //Debug.Log("Teleport setting true");
             teleport = true;
         }
     }
@@ -29,6 +30,7 @@ public class portal : MonoBehaviour {
     {
         if (vari.gameObject.tag == "Player")
         {
+            //Debug.Log("Teleport setting false");
             teleport = false;
         }
     }
