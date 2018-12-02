@@ -8,11 +8,27 @@ public class Movement : MonoBehaviour {
     public float speed = 5f;
     public float jump = 5f;
     public Rigidbody2D rf;
+
+    public Animator playerAnimator;
+
+    public SpriteRenderer playerSpriteRenderer;
+    
     // Update is called once per frame
     void Update()
     {
+        
         float hInput = Input.GetAxis("Horizontal");
-        transform.position = transform.position + new Vector3(hInput * speed * Time.deltaTime, 0, 0);
+        
+        float playersMovementX = hInput * speed * Time.deltaTime;
+        
+        transform.position = transform.position + new Vector3(playersMovementX, 0, 0);
+
+        if (hInput < 0)
+            playerSpriteRenderer.flipX = true;
+        if (hInput > 0)
+            playerSpriteRenderer.flipX = false;
+        
+        playerAnimator.SetFloat("Speed", Mathf.Abs(playersMovementX));
         /*if (Input.GetButtonDown("Jump") && onGround == true)
         {
             rf.AddForce(new Vector3(0, jump, 0), ForceMode2D.Impulse);
