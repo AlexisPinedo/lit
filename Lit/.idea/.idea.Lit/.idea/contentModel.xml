@@ -9,7 +9,9 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="Britney_time_test.cs" t="Include" />
+          <e p="Cheese.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
+          <e p="Mouse.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="portal.cs" t="Include" />
           <e p="SimpleAnime.cs" t="Include" />
