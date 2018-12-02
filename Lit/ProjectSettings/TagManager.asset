@@ -11,6 +11,7 @@ TagManager:
   - ground
   - Cheese
   - Mouse
+  - Drop
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class Britney_time_test : MonoBehaviour
    
 
     [SerializeField]
-    private float time;
+    public float time;
     [SerializeField]
     private int healPoints;
     // Use this for initialization
@@ -18,7 +18,7 @@ public class Britney_time_test : MonoBehaviour
     {
         Debug.Log("Begin");
     }
-
+   
     // Update is called once per frame 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -27,6 +27,10 @@ public class Britney_time_test : MonoBehaviour
             Debug.Log("Hits danger.");
             healPoints--;
        }
+        if (collision.collider.tag == "Drop")
+        {
+            healPoints--;
+        }
     }
     void Update()
     {
