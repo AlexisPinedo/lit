@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 50339017663544004}
   - component: {fileID: 58774759154321300}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: Player_V2_Steven
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,6 +232,8 @@ MonoBehaviour:
   speed: 50
   jump: 5
   rf: {fileID: 50339017663544004}
+  playerAnimator: {fileID: 0}
+  playerSpriteRenderer: {fileID: 0}
 --- !u!198 &198508777516166468
 ParticleSystem:
   m_ObjectHideFlags: 1
