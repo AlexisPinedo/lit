@@ -21,7 +21,9 @@ public class Loadscene : MonoBehaviour
                 Pause();
             }
         }
+       
     }
+
     public void LoadScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
