@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4644448546535872}
   - component: {fileID: 114267536068436114}
+  - component: {fileID: 114526268856058046}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -52,3 +53,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+--- !u!114 &114526268856058046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586526850947418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af0754599fd246e4a9b251d1ab6b993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
