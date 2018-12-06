@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Britney_time_test : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Britney_time_test : MonoBehaviour
     private int healPoints;
     // Use this for initialization
     //  public bool held = Input.GetKey(KeyCode.Escape);
+
+    public Text HpText; 
 
     void Start()
     {
@@ -31,6 +34,7 @@ public class Britney_time_test : MonoBehaviour
         {
             healPoints--;
         }
+        HpText.text = "HP : " + healPoints;
     }
     void Update()
     {
@@ -51,7 +55,7 @@ public class Britney_time_test : MonoBehaviour
     void GameOver()
     {
         Debug.Log("Dead :P");
-        SceneManager.LoadScene("GameOverMenu");
+        SceneManager.LoadScene("GameOverLose");
 
         //new scene implementeds
     }

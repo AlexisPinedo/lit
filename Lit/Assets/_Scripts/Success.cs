@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Success : MonoBehaviour {
     
-    public Text winText;
-    public GameObject winMenu;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        winText.text = "You Win!";
-        Time.timeScale = 0;
-        winMenu.SetActive(true);
+        SceneManager.LoadScene(4);
     }
 }

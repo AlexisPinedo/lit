@@ -11,13 +11,13 @@ public class WaterDropper : MonoBehaviour
     // Update is called once per frame
      void Start()
     {
-        InvokeRepeating("SpawnDrop", .5f, 2f);
+        InvokeRepeating("SpawnDrop", .5f, .5f);
     }
    void SpawnDrop()
     {
         Rigidbody2D water= Instantiate(drop);
         // water.position = gameObject.GetComponent<WaterDropper>();
-        drop.transform.position = new Vector2(x, y);
+        drop.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
     }
    
 }

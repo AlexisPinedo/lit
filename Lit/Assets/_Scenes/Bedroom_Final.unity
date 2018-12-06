@@ -575,6 +575,8 @@ MonoBehaviour:
   player: {fileID: 1873556207}
   endbox: {fileID: 1268027945}
   mainCamera: {fileID: 653505172}
+  speed: 1
+  playerAnimation: {fileID: 1873556210}
 --- !u!61 &1268027945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5660,6 +5662,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 10
   healPoints: 3
+  HpText: {fileID: 0}
+--- !u!95 &1873556210 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95990526746916018, guid: feaa4f099b2bd7e4fa04d9d1fdd8b7e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 301803459}
 --- !u!1 &1945144577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10306,7 +10314,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068674422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7790135, y: 0.2295815, z: -1.0885416}
+  m_LocalPosition: {x: -0.19, y: 0.2295815, z: -1.0885416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1734530861}
@@ -10385,7 +10393,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2125356928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.877349, y: 5.208439, z: -10}
+  m_LocalPosition: {x: 7.7837353, y: 5.2088513, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
