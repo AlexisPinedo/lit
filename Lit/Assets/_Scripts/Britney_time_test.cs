@@ -34,7 +34,10 @@ public class Britney_time_test : MonoBehaviour
         {
             healPoints--;
         }
-        HpText.text = "HP : " + healPoints;
+        if(HpText)
+        {
+            HpText.text = "HP : " + healPoints;
+        }
     }
     void Update()
     {

@@ -18,6 +18,7 @@ public class EndGameController : MonoBehaviour {
     bool endGame = false;
     public Animator playerAnimation;
     private IEnumerator coroutine;
+    public float waitTime = 3;
 
     private void Awake()
     {
@@ -50,7 +51,7 @@ public class EndGameController : MonoBehaviour {
 
     private IEnumerator Wait()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(waitTime);
         Debug.Log("Waited");
         SceneManager.LoadScene("GameOverMenuWin");
     }
