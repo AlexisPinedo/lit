@@ -15,7 +15,8 @@ public class Britney_time_test : MonoBehaviour
     // Use this for initialization
     //  public bool held = Input.GetKey(KeyCode.Escape);
 
-    public Text HpText; 
+    public Text HpText;
+    public Text timeLeftText;
 
     void Start()
     {
@@ -53,6 +54,8 @@ public class Britney_time_test : MonoBehaviour
             healPoints = 0;
             GameOver();
         }
+
+        timeLeftText.text = "TIME LEFT: " + (int)time;
        
     }
     void GameOver()

@@ -22,7 +22,7 @@ public class Cheese : MonoBehaviour {
             Debug.Log("Cheese has been found.");
             int cheese = Mouse.incrementCheese();
             cheeseCount.text = "CHEESE: " + cheese + " / 5";
-            Destroy( gameObject , 1f);
+            Destroy(gameObject);
             //this.gameObject.SetActive(false);
         }
     }
