@@ -577,6 +577,7 @@ MonoBehaviour:
   mainCamera: {fileID: 653505172}
   speed: 1
   playerAnimation: {fileID: 1873556210}
+  sceneAnimation: {fileID: 1848405872}
   waitTime: 3
 --- !u!61 &1268027945
 BoxCollider2D:
@@ -709,7 +710,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1834758496752274, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114947272475651274, guid: 1ae546942511b4feb85188a104cd92c4,
         type: 2}
@@ -5716,6 +5717,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1848405872 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95781141289290486, guid: 1ae546942511b4feb85188a104cd92c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307426473}
 --- !u!1 &1873556207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1244147470445814, guid: feaa4f099b2bd7e4fa04d9d1fdd8b7e7,
@@ -5735,6 +5741,7 @@ MonoBehaviour:
   time: 10
   healPoints: 3
   HpText: {fileID: 0}
+  timeLeftText: {fileID: 0}
 --- !u!95 &1873556210 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95990526746916018, guid: feaa4f099b2bd7e4fa04d9d1fdd8b7e7,
@@ -10465,7 +10472,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2125356928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1017914, y: 5.2080865, z: -10}
+  m_LocalPosition: {x: 6.0856047, y: 5.2080812, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

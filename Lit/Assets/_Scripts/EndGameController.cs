@@ -17,8 +17,10 @@ public class EndGameController : MonoBehaviour {
     Movement script;
     bool endGame = false;
     public Animator playerAnimation;
+    public Animator sceneAnimation;
     private IEnumerator coroutine;
     public float waitTime = 3;
+
 
     private void Awake()
     {
@@ -33,9 +35,19 @@ public class EndGameController : MonoBehaviour {
     {
         step = speed * Time.deltaTime;
         cameraStartingLocation = mainCamera.transform.position;
-
     }
-   
+
+    //added; can you make code enter this line? not ever entering the below method.
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("entered collisionand should fade");
+        if (collision.collider.tag == "Player")
+        {
+            Debug.Log("entered if statement");
+            sceneAnimation.SetTrigger("FadeOut");
+            endGame = true;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         StartCoroutine(Wait());
@@ -45,14 +57,19 @@ public class EndGameController : MonoBehaviour {
         mainCamera.Follow = null;
         playerAnimation.SetFloat("Speed", 0); 
         Debug.Log("Starting coroutine");
-        //mainCamera.transform.position = Vector3.MoveTowards(cameraStartingLocation, cameraEndLocation, step);
-
+       
+        //mainCamera.transform.position = Vector3.MoveTowards(cameraStartingLocation, cameraEndLocation, step)
     }
-
+   
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(waitTime);
+       //should not switch scenes unless fadeout happens
         Debug.Log("Waited");
-        SceneManager.LoadScene("GameOverMenuWin");
+        if(endGame==true)
+        {
+            SceneManager.LoadScene("GameOverMenuWin");
+        }
+
     }
 }

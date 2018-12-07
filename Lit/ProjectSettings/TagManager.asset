@@ -12,6 +12,7 @@ TagManager:
   - Cheese
   - Mouse
   - Drop
+  - EndGame
   layers:
   - Default
   - TransparentFX
