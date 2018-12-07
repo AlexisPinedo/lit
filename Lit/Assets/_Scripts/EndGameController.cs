@@ -15,7 +15,7 @@ public class EndGameController : MonoBehaviour {
     private Vector3 cameraStartingLocation;
     private Vector3 cameraEndLocation = new Vector3(-.91f, 0.355f, -10f);
     Movement script;
-    bool endGame = false;
+    bool endGame, trig = false;
     public Animator playerAnimation;
     public Animator sceneAnimation;
     private IEnumerator coroutine;
@@ -37,20 +37,27 @@ public class EndGameController : MonoBehaviour {
         cameraStartingLocation = mainCamera.transform.position;
     }
 
-    //added; can you make code enter this line? not ever entering the below method.
-    public void OnCollisionEnter2D(Collision2D collision)
+    ////added; can you make code enter this line? not ever entering the below method.
+    //public void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    Debug.Log("entered collisionand should fade");
+    //    if (collision.collider.tag == "Player")
+    //    {
+    //        Debug.Log("entered if statement");
+    //        sceneAnimation.SetTrigger("FadeOut");
+    //        endGame = true;
+    //    }
+    //}
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("entered collisionand should fade");
-        if (collision.collider.tag == "Player")
+       
+        StartCoroutine(Wait());
+        if (trig==true)
         {
             Debug.Log("entered if statement");
             sceneAnimation.SetTrigger("FadeOut");
             endGame = true;
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        StartCoroutine(Wait());
         player.transform.position = new Vector3(4.69f, -1.85f, 0f);
         script.enabled = false;
         mainCamera.m_Lens.OrthographicSize = 8;
@@ -63,11 +70,13 @@ public class EndGameController : MonoBehaviour {
    
     private IEnumerator Wait()
     {
+        trig = true;
         yield return new WaitForSeconds(waitTime);
        //should not switch scenes unless fadeout happens
         Debug.Log("Waited");
         if(endGame==true)
         {
+            Debug.Log("entered scenemanager");
             SceneManager.LoadScene("GameOverMenuWin");
         }
 
