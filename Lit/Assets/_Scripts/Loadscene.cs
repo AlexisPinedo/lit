@@ -50,10 +50,10 @@ public class Loadscene : MonoBehaviour
     }
     public void Resume()
     {
+        Time.timeScale = 1f;
         music.Play();
         pauseOff.Play();
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
         pauseGame = false;
     }
 

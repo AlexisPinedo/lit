@@ -16,7 +16,8 @@ public class SceneChange : MonoBehaviour {
 	}
     public void FadetoLevel(int LevelIntex)
     {
-       levelLoad = LevelIntex;
+        Time.timeScale = 1f;
+        levelLoad = LevelIntex;
         animator.SetTrigger("FadeOut");
     }
     public void OnFadeComplete()

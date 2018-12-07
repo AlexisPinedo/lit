@@ -34,22 +34,23 @@ public class EndGameController : MonoBehaviour {
         cameraStartingLocation = mainCamera.transform.position;
 
     }
-
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        StartCoroutine(Wait());
         player.transform.position = new Vector3(4.69f, -1.85f, 0f);
         script.enabled = false;
         mainCamera.m_Lens.OrthographicSize = 8;
         mainCamera.Follow = null;
-        playerAnimation.SetFloat("Speed", 0);
+        playerAnimation.SetFloat("Speed", 0); 
         Debug.Log("Starting coroutine");
         //mainCamera.transform.position = Vector3.MoveTowards(cameraStartingLocation, cameraEndLocation, step);
-        StartCoroutine(Wait());
+
     }
 
     private IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(10);
         Debug.Log("Waited");
         SceneManager.LoadScene("GameOverMenuWin");
     }

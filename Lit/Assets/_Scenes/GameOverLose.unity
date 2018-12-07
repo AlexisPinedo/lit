@@ -214,11 +214,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1750494863}
+      objectReference: {fileID: 2113824891}
     - target: {fileID: 114236572623580530, guid: d86232ec06ebb4bec8e6ed2cc309b4b8,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: FadetoLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d86232ec06ebb4bec8e6ed2cc309b4b8, type: 2}
@@ -428,6 +428,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046779065}
   m_CullTransparentMesh: 0
+--- !u!1001 &1212372644
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1248193841
 Prefab:
   m_ObjectHideFlags: 0
@@ -529,11 +571,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1750494863}
+      objectReference: {fileID: 2113824891}
     - target: {fileID: 114409558139983896, guid: 665568b0b86894570a28e422e79a4caf,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: FadetoLevel
       objectReference: {fileID: 0}
     - target: {fileID: 114409558139983896, guid: 665568b0b86894570a28e422e79a4caf,
         type: 2}
@@ -959,3 +1001,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2113824891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114947272475651274, guid: 1ae546942511b4feb85188a104cd92c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1212372644}
+  m_Script: {fileID: 11500000, guid: 5af0754599fd246e4a9b251d1ab6b993, type: 3}

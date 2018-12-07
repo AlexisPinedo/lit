@@ -934,41 +934,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5061061, y: 6.594733}
   m_EdgeRadius: 0
---- !u!1 &332764001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1124390606490978, guid: 6f28b9d81db12479f8bab586337935a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1054084853}
---- !u!114 &332764006
-MonoBehaviour:
+--- !u!1001 &336261529
+Prefab:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 332764001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1924472073}
-          m_MethodName: playSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255481988033268, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834758496752274, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ae546942511b4feb85188a104cd92c4, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &389184288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,41 +2356,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.794418, y: 1}
   m_EdgeRadius: 0
---- !u!1 &723515805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1543438304275168, guid: 6f28b9d81db12479f8bab586337935a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1054084853}
---- !u!114 &723515810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723515805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1924472073}
-          m_MethodName: playSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!1 &743650001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,7 +2588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832664033
 GameObject:
@@ -3013,41 +2989,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960665007}
   m_CullTransparentMesh: 0
---- !u!1 &981304340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1675965814114832, guid: 6f28b9d81db12479f8bab586337935a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1054084853}
---- !u!114 &981304345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 981304340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1924472073}
-          m_MethodName: playSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!1 &999235845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,11 +3186,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 814595974}
     m_Modifications:
-    - target: {fileID: 114934084301631280, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 224347510000401466, guid: 6f28b9d81db12479f8bab586337935a9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3340,6 +3276,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114284170400320910, guid: 6f28b9d81db12479f8bab586337935a9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1880208010}
     - target: {fileID: 114187784598867140, guid: 6f28b9d81db12479f8bab586337935a9,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3350,39 +3291,24 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1924472073}
-    - target: {fileID: 114284170400320910, guid: 6f28b9d81db12479f8bab586337935a9,
+    - target: {fileID: 114824102891465166, guid: 6f28b9d81db12479f8bab586337935a9,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1924472073}
+    - target: {fileID: 114430436126733652, guid: 6f28b9d81db12479f8bab586337935a9,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1924472073}
+    - target: {fileID: 114306995481973468, guid: 6f28b9d81db12479f8bab586337935a9,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1924472073}
     - target: {fileID: 1689299218862670, guid: 6f28b9d81db12479f8bab586337935a9, type: 2}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224347510000401466, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.76375
-      objectReference: {fileID: 0}
-    - target: {fileID: 224347510000401466, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.76375
-      objectReference: {fileID: 0}
-    - target: {fileID: 224347510000401466, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.76375
-      objectReference: {fileID: 0}
-    - target: {fileID: 114934084301631280, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114934084301631280, guid: 6f28b9d81db12479f8bab586337935a9,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f28b9d81db12479f8bab586337935a9, type: 2}
@@ -10237,6 +10163,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1880208010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114947272475651274, guid: 1ae546942511b4feb85188a104cd92c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 336261529}
+  m_Script: {fileID: 11500000, guid: 5af0754599fd246e4a9b251d1ab6b993, type: 3}
 --- !u!1 &1924472072
 GameObject:
   m_ObjectHideFlags: 0
